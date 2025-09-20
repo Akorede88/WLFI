@@ -14,8 +14,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     setMessage("");
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      // Use your local dev server URL for redirect
-      redirectTo: window.location.origin + "/reset-password"
+      redirectTo: "https://wlfi-omega.vercel.app/reset-password"
     });
     if (error) {
       setMessage(error.message);
