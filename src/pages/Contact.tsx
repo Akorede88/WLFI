@@ -19,7 +19,14 @@ const Contact = () => {
         <Card className="bg-card/80 backdrop-blur-md border-primary/20 p-8 shadow-[var(--shadow-card)] text-center">
           <div className="text-2xl font-semibold text-primary mb-2">Customer Support</div>
           <div className="text-3xl font-bold text-foreground select-all break-all mb-4">+1 (929) 224-5503</div>
-          <div className="text-muted-foreground">Available 24/7</div>
+          <div className="text-muted-foreground mb-4">Available 24/7</div>
+          <div className="text-lg font-semibold text-primary mb-1">Email Support</div>
+          <div className="text-foreground select-all break-all mb-1">
+            <a href="mailto:overturfzmichael@gmail.com" className="underline text-blue-600">overturfzmichael@gmail.com</a>
+          </div>
+          <div className="text-foreground select-all break-all mb-2">
+            <a href="mailto:Smke5211@gmail.com" className="underline text-blue-600">Smke5211@gmail.com</a>
+          </div>
         </Card>
       </div>
     </div>

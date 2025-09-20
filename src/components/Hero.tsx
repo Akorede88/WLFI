@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/crypto-hero.jpg";
+import ConnectWallet from "@/components/ConnectWallet";
 
 const Hero = () => {
+  const [showWithdraw, setShowWithdraw] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -43,12 +46,27 @@ const Hero = () => {
             </div>
           </Card>
           
-          {/* <Button 
+          <Button 
             size="lg" 
-            className="bg-gradient-to-r from-primary to-ethereum hover:shadow-[var(--shadow-neon)] text-lg px-12 py-6 h-auto font-semibold"
+            className="bg-gradient-to-r from-primary to-ethereum hover:shadow-[var(--shadow-neon)] text-lg px-12 py-6 h-auto font-semibold mb-4"
+            onClick={() => setShowWithdraw(true)}
           >
-            BUY TOKENS NOW
-          </Button> */}
+            Withdraw
+          </Button>
+          {showWithdraw && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+              <div className="bg-background rounded-lg shadow-lg p-4 relative w-full max-w-lg mx-auto">
+                <button
+                  className="absolute top-2 right-2 text-2xl text-muted-foreground hover:text-primary"
+                  onClick={() => setShowWithdraw(false)}
+                  aria-label="Close"
+                >
+                  ×
+                </button>
+                <ConnectWallet />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
