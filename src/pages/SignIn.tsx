@@ -26,6 +26,8 @@ const SignIn = () => {
       setMessage(error.message);
     } else {
       setMessage("Signed in successfully! Redirecting...");
+      setEmail("");
+      setPassword("");
       setTimeout(() => {
         navigate("/");
       }, 1200);

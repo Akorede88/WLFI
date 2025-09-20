@@ -38,6 +38,8 @@ const ResetPassword = () => {
       setMessage(error.message);
     } else {
       setMessage("Password updated! Redirecting to sign in...");
+      setPassword("");
+      setConfirmPassword("");
       setTimeout(() => navigate("/signin"), 1500);
     }
     setLoading(false);

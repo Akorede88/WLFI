@@ -21,6 +21,7 @@ const ForgotPassword = () => {
       setMessage(error.message);
     } else {
       setMessage("Password reset link sent! Check your email.");
+      setEmail("");
     }
   };
 

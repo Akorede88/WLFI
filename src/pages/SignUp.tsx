@@ -42,6 +42,13 @@ const SignUp = () => {
       setMessage(error.message);
     } else {
       setMessage("Check your email for a confirmation link!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        confirmPassword: ""
+      });
     }
     setLoading(false);
   };
@@ -67,7 +74,7 @@ const SignUp = () => {
                   id="firstName"
                   name="firstName"
                   type="text"
-                  placeholder="John"
+                  placeholder="firstname"
                   value={formData.firstName}
                   onChange={handleInputChange}
                   className="bg-input border-border focus:border-primary"
@@ -80,7 +87,7 @@ const SignUp = () => {
                   id="lastName"
                   name="lastName"
                   type="text"
-                  placeholder="Doe"
+                  placeholder="lastname"
                   value={formData.lastName}
                   onChange={handleInputChange}
                   className="bg-input border-border focus:border-primary"
@@ -95,7 +102,7 @@ const SignUp = () => {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="john@example.com"
+                placeholder="name@example.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 className="bg-input border-border focus:border-primary"
