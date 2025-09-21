@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 import { Input } from "@/components/ui/input";
+import Countdown from "./Countdown";
 
 const PaymentSection = () => {
   const [selectedCrypto, setSelectedCrypto] = useState("BTC");
@@ -58,15 +59,20 @@ const PaymentSection = () => {
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Choose Your Payment Method
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Multiple cryptocurrencies accepted for maximum convenience
-          </p>
-        </div>
-
+  <div className="text-center mb-12">
+  <h2 className="text-4xl font-bold mb-4 text-foreground">
+    Choose Your Payment Method
+  </h2>
+  <p className="text-xl text-muted-foreground">
+    Multiple cryptocurrencies accepted for maximum convenience
+  </p>
+</div>
+{/* Timer Left Area */}
+<div className="text-center mb-8">
+  <span className="text-lg font-semibold text-primary">
+    Timer Left: <Countdown />
+  </span>
+</div>
         <Card className="bg-card/80 backdrop-blur-md border-primary/20 p-8 shadow-[var(--shadow-card)]">
           {/* Crypto Selection */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

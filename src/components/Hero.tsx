@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/crypto-hero.jpg";
 import ConnectWallet from "@/components/ConnectWallet";
+import Countdown from "./Countdown";
 
 const Hero = () => {
   const [showWithdraw, setShowWithdraw] = useState(false);
@@ -32,8 +33,8 @@ const Hero = () => {
           <Card className="bg-card/80 backdrop-blur-md border-primary/20 p-8 mb-8 shadow-[var(--shadow-neon)]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="md:col-span-3">
-                <p className="text-sm text-muted-foreground mb-2">TIME LEFT</p>
-                <p className="text-2xl font-bold text-accent">3 weeks 4 days</p>
+               <p className="text-sm text-muted-foreground mb-2">TIME LEFT</p>
+<p className="text-2xl font-bold text-accent"><Countdown /></p>
               </div>
             </div>
             

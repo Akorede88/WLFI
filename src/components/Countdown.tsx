@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // Set your target end date here (YYYY-MM-DD)
-const TARGET_DATE = new Date("2025-10-11"); // Example: 3 weeks 4 days from Sept 20, 2025
+const TARGET_DATE = new Date("2025-10-16"); // Example: 3 weeks 4 days from Sept 20, 2025
 
 function getTimeLeft(targetDate: Date) {
   const now = new Date();
@@ -33,12 +33,11 @@ const Countdown = () => {
     return <span>Countdown complete!</span>;
   }
 
-  return (
-    <span>
-      {timeLeft.weeks > 0 && `${timeLeft.weeks} week${timeLeft.weeks > 1 ? "s" : ""}`} 
-      {timeLeft.days > 0 && `${timeLeft.days} day${timeLeft.days > 1 ? "s" : ""}`}
-    </span>
-  );
+return (
+  <span>
+    {`${timeLeft.weeks} week${timeLeft.weeks !== 1 ? "s" : ""} ${timeLeft.days} day${timeLeft.days !== 1 ? "s" : ""}`}
+  </span>
+);
 };
 
 export default Countdown;
