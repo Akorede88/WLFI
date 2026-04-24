@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PaymentSection from "@/components/PaymentSection";
+import BDSPaymentSection from "@/components/BDSPaymentSection";
 import TokenInfo from "@/components/TokenInfo";
 import FAQ from "@/components/FAQ";
 
@@ -12,6 +13,9 @@ const Index = () => {
         <Hero />
         <div id="presale">
           <PaymentSection />
+        </div>
+        <div id="dungeon-pass">
+          <BDSPaymentSection />
         </div>
         <div id="tokenomics">
           <TokenInfo />

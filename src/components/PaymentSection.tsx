@@ -163,9 +163,11 @@ const PaymentSection = () => {
               <p className="text-sm text-muted-foreground mb-2">
                 Send your {selectedCrypto} to the address above
               </p>
-              <p className="text-xs text-muted-foreground mb-4">
+
+            <p className="text-xs text-muted-foreground mb-4">
                 * Tokens will be credited to your account after payment confirmation
               </p>
+              
               <div className="bg-red-100 border border-red-400 text-red-700 rounded p-3 mb-2 font-semibold">
                 IMPORTANT: After making your payment, please email your payment receipt to <a href="mailto:overturfzmichael@gmail.com" className="underline">overturfzmichael@gmail.com</a> and <a href="mailto:Smke5211@gmail.com" className="underline">Smke5211@gmail.com</a> for verification and token crediting.
               </div>

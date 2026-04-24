@@ -50,6 +50,18 @@ const faqs = [
     question: "Can I get a refund?",
     answer: "Due to the nature of cryptocurrency transactions, refunds are only available if the presale doesn't meet its minimum target or in case of technical issues.",
   },
+  {
+    question: "What is the Dungeon Sessions Pass?",
+    answer: "The Dungeon Sessions Pass is an exclusive entry token system. After paying a minimum of $500 in BTC or ETH, you will receive tokens that grant you access to 10 private dungeon sessions. Tokens are credited after payment verification.",
+  },
+  {
+    question: "How do I purchase a Dungeon Sessions Pass?",
+    answer: "Select either BTC or ETH as your payment method, enter an amount of at least $500 USD, and send the payment to the provided wallet address. After confirmation, your entry tokens will be credited. For questions, message admin via the Contact page.",
+  },
+  {
+    question: "Which cryptocurrencies are accepted for the Dungeon Pass?",
+    answer: "Currently, only Bitcoin (BTC) and Ethereum (ETH) are accepted for Dungeon Sessions Pass purchases. The minimum payment is $500 USD equivalent.",
+  },
 ];
 
 function FAQ() {

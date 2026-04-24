@@ -21,8 +21,11 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#presale" className="text-foreground hover:text-primary transition-colors">
+          <a href="#presale" className="text-foreground hover:text-primary transition-colors">
               Presale
+            </a>
+            <a href="#dungeon-pass" className="text-foreground hover:text-primary transition-colors">
+              Dungeon Pass
             </a>
             <a href="#tokenomics" className="text-foreground hover:text-primary transition-colors">
               Tokenomics
@@ -77,6 +80,13 @@ const Header = () => {
               onClick={() => setMobileOpen(false)}
             >
               Presale
+            </a>
+            <a
+              href="#dungeon-pass"
+              className="text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Dungeon Pass
             </a>
             <a
               href="#tokenomics"
